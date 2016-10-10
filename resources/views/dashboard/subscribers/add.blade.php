@@ -18,13 +18,13 @@
             <fieldset>
             <div class="form-group">
                 <label>{{ trans('forms.user.email') }}</label>
-                <textarea rows="5" class="form-control" name="email" required>{{ Binput::old('email') }}</textarea>
+                <textarea rows="5" class="form-control" name="email" required placeholder="{{ trans('forms.user.email') }}">{{ Binput::old('email') }}</textarea>
                 <span class="help-block">{{ trans('dashboard.subscribers.add.help') }}</span>
             </div>
             </fieldset>
 
             <div class="form-group">
-                <div class='btn-group'>
+                <div class="btn-group">
                     <button type="submit" class="btn btn-success">{{ trans('forms.add') }}</button>
                     <a class="btn btn-default" href="{{ route('dashboard.subscribers.index') }}">{{ trans('forms.cancel') }}</a>
                 </div>
